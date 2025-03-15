@@ -1,0 +1,21 @@
+routes:
+- handler: buscar_usuarios
+  methods:
+  - GET
+  path: /buscar_usuarios
+- handler: obtener_usuarios
+  methods:
+  - GET
+  path: /usuarioslista
+- handler: crear
+  methods:
+  - POST
+  path: /agregarusuario
+- handler: actualizar
+  methods:
+  - PATCH
+  path: /modificarusuario/<int:usuario_id>
+- handler: borrar
+  methods:
+  - DELETE
+  path: /eliminarusuario/<int:usuario_id>
